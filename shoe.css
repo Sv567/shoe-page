@@ -1,0 +1,46 @@
+body{
+    background-color: lightgrey;
+}
+section{
+    max-width: 40%;
+    display: inline-block;
+    font-style: normal;
+    word-spacing: 2px;
+    font-size: 17px;
+}
+section:first-child{
+    margin-right: 20%;
+    color: white;
+}
+.main-shoe{
+   max-width: 450px;
+   position: absolute;
+   top: 10px;
+   right: 50px;
+   /*transition: 0.5s;*/
+}
+.main-shoe:hover{
+    max-width: 620px;
+    top: 0px;
+    right: 0px;
+}
+main{
+    background: linear-gradient(to right, #8a2387, #E94057 ,#f27121);
+    box-shadow: 0px 0px 10px black;
+    padding: 2%;
+    margin: 5% 10%;
+    position: relative;
+    height: 70vh;
+    z-index: 10;
+}
+body::before{
+    content:"";
+    position: absolute;
+    background: linear-gradient(to right, #b92b27, #1565C0);
+    box-shadow: 0px 0px 10px black;
+    transform: skewY(15deg);
+    inset: 0;
+}
+h1{
+    margin: 0px;
+}
